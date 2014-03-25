@@ -79,7 +79,6 @@ def sieveOfErat(end):
 	
 number=input('Enter a number: ')
 z=input('Enter 0 - Is prime \n \t1 - Prime list(is_prime) \n\t2 - Prime list normal \n\t3 - Sieve of Erat\n:')
-start = time.time()
 
 if(z==1):
 	plist=prime_list(number)
@@ -104,5 +103,4 @@ else:
         f = open('myfile.txt','w')
         f.write(str(plist).strip('[]')) # python will convert \n to os.linesep
         f.close()
-end = time.time()
-print end - start
+
